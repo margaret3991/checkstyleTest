@@ -25,13 +25,13 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dbelyaev/action-checkstyle@v0.1.1
         with:
-          checkstyle_config: checkstyle.xml
+          checkstyle_config: mygoogle_checks.xml
           github_token: ${{ secrets.github_token }}
           # Change reviewdog reporter if you need [github-pr-check, github-check, github-pr-review].
           reporter: github-check
           # Change reporter level if you need [info,warning,error].
           # GitHub Status Check won't become failure with a warning.
           level: warning
-          workdir: src/main
+          #workdir: src/main
 
 
